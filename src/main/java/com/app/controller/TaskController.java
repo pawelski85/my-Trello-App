@@ -15,18 +15,11 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/v1/task")
-//@RequiredArgsConstructor na razie tego nie uzywam
+@RequiredArgsConstructor
 public class TaskController {
 
     private final DbService service;
     private final TaskMapper taskMapper;
-
-    @Autowired
-    public TaskController(DbService service, TaskMapper taskMapper) {
-        this.service = service;
-        this.taskMapper = taskMapper;
-    }
-
 
     @GetMapping("/getTasks")
     public List<TaskDto> getTasks() {
