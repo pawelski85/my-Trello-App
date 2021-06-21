@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 
-@Repository
+//@Repository
 public interface TaskRepository extends CrudRepository<Task, Long> {
 
-    List<Task> findAll();
-
-    Optional<Task> findTaskById(Long id);
+//    List<Task> findAll();
+//
+//    Optional<Task> findTaskById(Long id);
 }

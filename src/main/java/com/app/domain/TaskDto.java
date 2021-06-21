@@ -3,10 +3,10 @@ package com.app.domain;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@Getter
-@AllArgsConstructor
+//@Getter
+//@AllArgsConstructor
 public class TaskDto {
-    private Long id;
-    private String title;
-    private String content;
+//    private Long id;
+//    private String title;
+//    private String content;
 }
